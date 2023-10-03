@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio Web</title>
+  <!-- Vincula Bootstrap CSS desde un CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos personalizados */
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    
+    .jumbotron {
+      background: url('https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg') no-repeat center center/cover;
+      color: #ffffff;
+      text-align: center;
+      padding: 150px 0;
+      position: relative;
+    }
+    
+    .jumbotron:before {
+      content: "";
+      background: url('https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg') no-repeat center center/cover;
+      opacity: 0.2;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+    
+    .menu {
+      background-color: #58B2AF;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Menú de navegación -->
+  <nav class="navbar menu">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <a class="navbar-brand" href="equipo.html">Equipo</a>
+      <a class="navbar-brand" href="noticias.html">Noticias</a>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1 class="display-4">Bienvenido a Mi Sitio Web</h1>
+    <p class="lead">Explora el mundo de la tecnología y la inteligencia artificial con nosotros.</p>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="bg-white p-4 mt-4">
+          <h2>Descubre más sobre nosotros</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae tortor varius ultrices sed nec quam.</p>
+          <p>Proin eu nunc eu urna venenatis sollicitudin. Nullam nec risus ac erat varius varius. Nulla facilisi.</p>
+          <p>Curabitur vitae metus vitae quam vehicula ultrices at non libero.</p>
+
+          <!-- Video de YouTube -->
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/K5pkkuiyRzk" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vincula Bootstrap JS y Popper.js desde un CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
